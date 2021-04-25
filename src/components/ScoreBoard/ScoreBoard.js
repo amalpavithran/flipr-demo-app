@@ -14,7 +14,7 @@ class ScoreBoard extends React.Component{
                     { headerName: "MI VS RCB", children:[
                         { headerName: "Player Data", children:[
                         { headerName: 'Player Name',  field: 'playerName' },
-                        { headerName: 'Team', field: 'playerTeam' },]},
+                        ]},
                         { headerName: 'Batting Data', children:[
                             { headerName: 'R', field: 'battingData.runs' , width: 60,},
                             { headerName: 'B', field: 'battingData.balls' , width: 60,},
@@ -47,7 +47,7 @@ class ScoreBoard extends React.Component{
         // console.log("HERE")
         // console.log(this.props.rowData)
         return(
-            <div className="ag-theme-alpine" style={{ height: 608.35, width: 1025, "overflow-x": "hidden", "overflow-y": "hidden"}}>
+            <div className="ag-theme-alpine" style={{ height: 608.35, width: 825, "overflow-x": "hidden", "overflow-y": "hidden"}}>
             <AgGridReact 
                 onGridReady={this.onGridReady}
                 rowData={this.props.rowData}
@@ -60,7 +60,6 @@ class ScoreBoard extends React.Component{
                 columnDefs={this.state.columnDefs}>
                 <AgGridColumn headerName="MI VS RCB" > 
                 <AgGridColumn field="playerName"></AgGridColumn>
-                <AgGridColumn field="playerTeam"></AgGridColumn>
                 <AgGridColumn headerName="Batting Data" style={{color:"#70757a", fontSize:"15px"}}>
                 <AgGridColumn field="battingData.balls"></AgGridColumn>
                 <AgGridColumn field="battingData.runs"></AgGridColumn>

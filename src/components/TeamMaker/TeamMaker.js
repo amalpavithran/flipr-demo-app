@@ -38,7 +38,10 @@ class TeamMaker extends React.Component {
       }
     componentDidMount(){
       console.log(this.props.location.state.matchId)
-      axios.get(`/matches/${this.props.location.state.matchId}/players`)
+      axios.get("/matches/:id/players", {
+        params: {
+          id: this.props.location.state.matchId,
+        }})
         .then(response => {this.setState({players:response.data.players})
                           })
 
@@ -86,7 +89,12 @@ class TeamMaker extends React.Component {
     validateButton(){
       console.log(this.state.selectedPlayers)
       if(this.state.selectedPlayers.length >= 11 ){  //Change to 11
-            this.setState({continue: true, deactivate:true, cName:""})
+        if(this.state.credits<0){
+            alert("CREDITS CANNOT BE LESS THAN 0")
+            this.setState({continue: false, deactivate:true, cName:""})
+        }
+        else{
+            this.setState({continue: true, deactivate:true, cName:""})}
       }
       else{
         this.setState({continue:false, deactivate:false, cName:"mx-auto mt-0 shadow cardAnim"})

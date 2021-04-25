@@ -19,9 +19,8 @@ class Header extends React.Component {
     return (
 <Navbar variant="dark" style={{'background-color':'#c51d23'}}>
       <Button variant="outline-light" className="BackButton" onClick={this.onContinue}>Back</Button>
-    <Navbar.Brand className = "mx-auto">
-      DREAM 11
-    </Navbar.Brand>
+    <Navbar.Brand className = "mx-auto" style={{fontWeight:"bold", fontFamily:"Georgia"}}>
+BOWLED OVER    </Navbar.Brand>
   </Navbar>
     );
   }

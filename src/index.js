@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import createRoutes from './routes';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://flipr-api-server.herokuapp.com';
+axios.defaults.baseURL = 'http://localhost:8081';
 const routes = createRoutes();
 
 ReactDOM.render(

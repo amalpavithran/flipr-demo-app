@@ -35,7 +35,7 @@ class Matches extends React.Component {
                 team2: "MI",
 
         }]
-        console.log(this.state.matches[0])
+        console.log(this.state.matches)
 
       return (
         <div>
