@@ -53,6 +53,7 @@ class StartMatch extends React.Component{
 
     }
     getBallData(ballNo){
+        if(!this.state.matchOver){
         axios.get("/getBallData",{
             params: {
                 matchId : this.props.location.state.matchId,
@@ -65,8 +66,12 @@ class StartMatch extends React.Component{
               'Access-Control-Allow-Headers': '*',
             },
           })
-          .then(response => this.setState({ballNo:ballNo+1, userTeam : response.data.userTeam, overNo:response.data.overNo}, function(){this.calcPoints()}
+          .then(response => this.setState({ballNo:ballNo+1, userTeam : response.data.userTeam, overNo:response.data.overNo, matchOver:response.data.matchOver}, function(){this.calcPoints()}
           ))
+        }
+        else{
+            alert("MATCH IS OVER")
+        }
 
 
     }
@@ -82,6 +87,7 @@ class StartMatch extends React.Component{
         this.setState({isStarted:props,})
         this.getBallData(this.state.ballNo)
         this.interval = setInterval(() => {
+
             this.getBallData(this.state.ballNo);
             console.log(this.state.ballNo)
             
