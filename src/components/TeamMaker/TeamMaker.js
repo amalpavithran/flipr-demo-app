@@ -38,10 +38,7 @@ class TeamMaker extends React.Component {
       }
     componentDidMount(){
       console.log(this.props.location.state.matchId)
-      axios.get("/matches/:id/players", {
-        params: {
-          id: this.props.location.state.matchId,
-        }})
+      axios.get(`/matches/${this.props.location.state.matchId}/players`)
         .then(response => {this.setState({players:response.data.players})
                           })
 
