@@ -1,0 +1,40 @@
+.ContinueButton{
+    background: #25ba38;
+    color: #fff;
+    opacity: 1;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    height: 32px;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+.Footer{
+
+    height: 40px;
+    position: fixed;
+    margin-bottom: 16px;
+    width: 100%;
+    
+    z-index: 6;
+    bottom: 0px;
+    margin-left: -10px;
+    padding-left: 0;
+
+}
+
+.Fcontainer{
+    display: flex;
+    justify-content: center;
+}

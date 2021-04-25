@@ -1,0 +1,35 @@
+.PlayerName{
+    color: #00a0ff;
+    font-weight: 500;
+    font-family: Noway, sans-serif, -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Ubuntu, Arial, sans-serif;
+    font-size: var(--font-medium);
+    padding-top: 0 !important;
+}
+
+.PlayerCredits{
+    
+    font-weight: 500;
+    font-family: Noway, sans-serif, -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Ubuntu, Arial, sans-serif;
+    font-size: var(--font-medium);
+    padding-left: 5rem !important;
+}
+
+.CircleButton {
+    width: 30px;
+    height: 30px;
+    text-align: center !important;
+    padding: 0!important; 
+    font-size: 20px!important;
+    line-height: 1.428571429!important;
+    border-radius: 15px!important;
+  }
+  .SmallCircleButton {
+    width: 30px;
+    height: 30px;
+    text-align: center !important;
+    padding: 0!important; 
+    margin-left:6px !important;
+    font-size: 15px!important;
+    line-height: 1.428571429!important;
+    border-radius: 15px!important;
+  }

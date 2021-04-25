@@ -1,0 +1,15 @@
+ <><Col md="auto" style={{padding:"1.25rem"}}>
+                        <Button variant={this.state.buttonVariant} className="CircleButton"> C </Button>
+                    </Col>
+                    <Col md="auto" style={{padding:"1.25rem"}}>
+                    <Button variant={this.state.buttonVariant} className="SmallCircleButton"> VC </Button>
+                        </Col></>
+
+
+
+                        <Col  md="auto" style={{padding:"1.25rem"}}>
+                        <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
+                            <ToggleButton variant={this.state.buttonVariant} className="SmallCircleButton" value={2}>C</ToggleButton>
+                            <ToggleButton style={{paddingLeft:"1rem"}} variant={this.state.buttonVariant} className="SmallCircleButton" value={3}>VC</ToggleButton>
+                        </ToggleButtonGroup>
+                        </Col>

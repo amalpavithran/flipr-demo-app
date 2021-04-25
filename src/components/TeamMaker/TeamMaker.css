@@ -1,0 +1,38 @@
+.LargeContainer{
+    width: 100% !important;
+    max-width: 100% !important;
+
+}
+.StadiumBg{
+    height: 70rem;
+    min-height: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+.ContinueButton{
+    background: #25ba38;
+    color: #fff;
+    opacity: 1;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    height: 32px;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}

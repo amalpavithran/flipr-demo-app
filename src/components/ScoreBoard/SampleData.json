@@ -1,0 +1,124 @@
+// Suppose i chose 6  Batsman and 5 Bowlers.   batsmenData will have 6 entries and bowlerData will have 5 entries
+
+
+0.1:{
+
+    "batsman": "S Dhawan",
+    "bowler": "IK Pathan",
+    "non_striker": "G Gambhir",
+    "runs": {
+      "batsman": 0,
+      "extras": 0,
+      "total": 0
+
+}
+
+playerData = [
+
+    { "playerName"  : "Dhawan",
+        battingData{
+        "runs"      : 0,
+        "balls"     : 0,
+        "out"       : true/false,
+        "outType"   : " ",
+        "6s"        : 0,
+        "4s"        : 0,
+        },
+        bowlingData{
+        "overs"     : 2.4,
+        "runs"      : 0,
+        "wickets"    : 0,
+        "Points"    : 0,
+        }
+    },
+]
+    { "playerName"  : "Dhawan",
+        battingData{
+        "runs"      : 0,
+        "balls"     : 0,
+        "out"       : true/false,
+        "outType"   : " ",
+        "6s"        : 0,
+        "4s"        : 0,
+        },
+        bowlingData{
+        "overs"     : 2.4,
+        "runs"      : 0,
+        "wickets"    : 0,
+        "Points"    : 0,
+        }
+    },
+
+    { "playerName"  : "Dhawan",
+        battingData{
+        "runs"      : 0,
+        "balls"     : 0,
+        "out"       : true/false,
+        "outType"   : " ",
+        "6s"        : 0,
+        "4s"        : 0,
+        },
+        bowlingData{
+        "overs"     : 2.4,
+        "runs"      : 0,
+        "wickets"    : 0,
+        "Points"    : 0,
+        }
+    },
+
+
+]
+
+
+bowlerData = [
+
+        { "playerName"  : "bar",
+            "Overs"     : 2.4,
+            "Runs given"      : 0,
+            "Wickets taken"    : 0,
+            "Points"    : 0,
+        },
+        { "playerName"  : "bar",
+            "Overs"     : 2.4,
+            "Runs"      : 0,
+            "Wickets"    : true/false,
+            "Points"    : 0,
+        },
+        { "playerName"  : "bar",
+            "Overs"     : 2.4,
+            "Runs"      : 0,
+            "Wickets"    : true/false,
+            "Points"    : 0,
+        }
+
+
+
+
+]
+
+
+
+
+<AgGridReact 
+onGridReady={this.onGridReady}
+rowData={this.state.rowData}>
+<AgGridColumn headerName="MI VS RCB" > 
+<AgGridColumn headerName="Batting" style={{color:"#70757a", fontSize:"15px"}}>
+<AgGridColumn field="playerName"></AgGridColumn>
+<AgGridColumn field="B"></AgGridColumn>
+<AgGridColumn field="R"></AgGridColumn>
+<AgGridColumn field="4s"></AgGridColumn>
+<AgGridColumn field="6s"></AgGridColumn>
+<AgGridColumn field="Points"></AgGridColumn>
+</AgGridColumn>
+</AgGridColumn>
+</AgGridReact>
+<AgGridReact className="BottomTable"
+onGridReady={this.onGridReady}
+rowData={this.state.rowData}>
+    <AgGridColumn headerName="Bowling">
+<AgGridColumn field="playerName"></AgGridColumn>
+<AgGridColumn field="playerTeam"></AgGridColumn>
+</AgGridColumn>
+</AgGridReact>
+</div>

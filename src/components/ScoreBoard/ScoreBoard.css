@@ -1,0 +1,29 @@
+.ag-header-group-cell-label{
+    justify-content: center;
+}
+.ag-header{
+
+    background-color: #FFF;
+
+}
+     
+
+.ag-cell-label-container {
+    /* Necessary to allow for text to grow vertically */
+    height: 100%;
+}
+
+.ag-header-cell-label {
+    /* Necessary to allow for text to grow vertically */
+    color:#70757a;
+    height: 100%;
+    padding: 0 !important;
+}
+
+.BottomTable{
+
+    border: solid;
+    border-color: var(--ag-border-color, #babfc7);
+
+    border-width: 0px 0px 1px 0px !important;
+}
